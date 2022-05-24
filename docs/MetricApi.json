@@ -1,0 +1,73 @@
+
+[{
+    "methodType":"POST",
+    "methodName":"createmetric",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Metric"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMetricApi = new TempApi.MetricApi();",
+    "importModelParameter":["let metric = new TempApi.Metric();"],
+    "modelNames":["metric"],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMetricApi.createmetric( metric, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"DELETE",
+    "methodName":"deletemetric",
+    "returnType":{
+
+      "primitive":"true",
+      "type":"null"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMetricApi = new TempApi.MetricApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMetricApi.deletemetric( metricId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');/**nextFunction*/}});"
+  },{
+    "methodType":"GETALL",
+    "methodName":"getAllmetric",
+    "returnType":{
+      "primitive":false,
+      "jsType":"Array",
+      "modelName":"[Metric]"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMetricApi = new TempApi.MetricApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMetricApi.getAllmetric((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"GET",
+    "methodName":"getmetric",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Metric"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMetricApi = new TempApi.MetricApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMetricApi.getmetric( metricId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"PUT",
+    "methodName":"updatemetric",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Metric"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMetricApi = new TempApi.MetricApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMetricApi.updatemetric( metricId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  }
+]
